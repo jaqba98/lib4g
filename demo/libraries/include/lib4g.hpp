@@ -1,5 +1,11 @@
 #pragma once
 
 namespace lib4g {
-	void hello();
+	class Window {
+	public:
+		Window(int width, int height);
+	private:
+		int width;
+		int height;
+	};
 }
