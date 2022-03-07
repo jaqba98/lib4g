@@ -1,6 +1,7 @@
 #include <iostream>
+#include "lib4g.hpp"
 
 int main() {
-	std::cout << "Hello game" << std::endl;
+	lib4g::hello();
 	return 0;
 }
