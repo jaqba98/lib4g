@@ -1,11 +1,12 @@
 #pragma once
 
 namespace lib4g {
-	class window {
+	class window_pc {
 	public:
-		window(int width, int height);
+		window_pc(int width, int height, const char* title);
 	private:
 		int width;
 		int height;
+		const char* title;
 	};
 }
