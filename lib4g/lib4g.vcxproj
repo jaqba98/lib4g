@@ -159,11 +159,13 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\lib4g.hpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\lib4g.cpp" />
+    <ClCompile Include="src\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib4g.hpp" />
+    <ClInclude Include="src\window.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
