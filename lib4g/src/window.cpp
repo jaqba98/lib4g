@@ -14,9 +14,15 @@ namespace lib4g {
 			if (width < 0) {
 				throw "window width cannot be less than 0";
 			}
+			if (height < 0) {
+				throw "window height cannot be less than 0";
+			}
+			if (title == "") {
+				throw "window title cannot be empty";
+			}
 		}
 		catch (char const* err) {
-			std::cerr << "Failed to initialize window data: " << err << std::endl;
+			std::cout << "Failed to initialize window data: " << err << std::endl;
 		}
 	}
 }
