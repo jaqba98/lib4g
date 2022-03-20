@@ -5,8 +5,8 @@ namespace lib4g {
 	public:
 		window(int width, int height, const char* title);
 	private:
-		int width;
-		int height;
+		unsigned int width;
+		unsigned int height;
 		const char* title;
 		void validation();
 	};

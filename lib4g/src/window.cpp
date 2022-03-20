@@ -10,6 +10,6 @@ namespace lib4g {
 	}
 
 	void window::validation() {
-		/* todo: implement validation the window input data */
+		//throw std::runtime_error("error validation");
 	}
 }
