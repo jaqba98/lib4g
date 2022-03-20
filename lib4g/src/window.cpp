@@ -12,11 +12,11 @@ namespace lib4g {
 	void window::validation() {
 		try {
 			if (width < 0) {
-				throw 99;
+				throw "window width cannot be less than 0";
 			}
 		}
-		catch (int err) {
-			std::cout << "Failed to initialize window data: " << err << std::endl;
+		catch (char const* err) {
+			std::cerr << "Failed to initialize window data: " << err << std::endl;
 		}
 	}
 }
