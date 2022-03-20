@@ -10,6 +10,13 @@ namespace lib4g {
 	}
 
 	void window::validation() {
-		//throw std::runtime_error("error validation");
+		try {
+			if (width < 0) {
+				throw 99;
+			}
+		}
+		catch (int err) {
+			std::cout << "Failed to initialize window data: " << err << std::endl;
+		}
 	}
 }
