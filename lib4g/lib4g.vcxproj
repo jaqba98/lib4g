@@ -18,6 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="src\lib4g.cpp" />
+    <ClCompile Include="src\lib4g-core.cpp" />
+    <ClCompile Include="src\lib4g-handle-events.cpp" />
+    <ClCompile Include="src\lib4g-init.cpp" />
+    <ClCompile Include="src\lib4g-loop.cpp" />
+    <ClCompile Include="src\lib4g-render.cpp" />
+    <ClCompile Include="src\lib4g-window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib4g.hpp" />
+    <ClInclude Include="src\lib4g-core.hpp" />
+    <ClInclude Include="src\lib4g-handle-events.hpp" />
+    <ClInclude Include="src\lib4g-init.hpp" />
+    <ClInclude Include="src\lib4g-loop.hpp" />
+    <ClInclude Include="src\lib4g-render.hpp" />
+    <ClInclude Include="src\lib4g-window.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -158,15 +177,6 @@
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\lib4g.cpp" />
-    <ClCompile Include="src\window.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\lib4g.hpp" />
-    <ClInclude Include="src\window.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
