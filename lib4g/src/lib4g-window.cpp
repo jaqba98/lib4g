@@ -1,1 +1,1 @@
-#include "lib4gWindow.hpp"
+#include "lib4g-window.hpp"

@@ -36,7 +36,7 @@
     <ClCompile Include="src\lib4g-render.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\lib4g-init.cpp">
+    <ClCompile Include="src\lib4g-errors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,7 +59,10 @@
     <ClInclude Include="src\lib4g-render.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\lib4g-init.hpp">
+    <ClInclude Include="src\lib4g-errors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib4g-colors.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
