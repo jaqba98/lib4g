@@ -50,5 +50,8 @@
     <ClInclude Include="src\error-logger.hpp">
       <Filter>Header Files\logger</Filter>
     </ClInclude>
+    <ClInclude Include="src\messages.hpp">
+      <Filter>Header Files\consts</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

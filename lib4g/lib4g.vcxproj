@@ -27,6 +27,7 @@
     <ClInclude Include="src\colors.hpp" />
     <ClInclude Include="src\lib4g.hpp" />
     <ClInclude Include="src\error-logger.hpp" />
+    <ClInclude Include="src\messages.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
