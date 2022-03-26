@@ -1,7 +1,7 @@
 #pragma once
 
 namespace lib4g {
-	namespace logger {
+	namespace log {
 		void error(char const* msg);
 	}
 }
