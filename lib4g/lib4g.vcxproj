@@ -21,12 +21,12 @@
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="src\lib4g.cpp" />
-    <ClCompile Include="src\log.cpp" />
+    <ClCompile Include="src\error-logger.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\colors.hpp" />
     <ClInclude Include="src\lib4g.hpp" />
-    <ClInclude Include="src\log.hpp" />
+    <ClInclude Include="src\error-logger.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

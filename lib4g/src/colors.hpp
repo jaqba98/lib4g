@@ -1,8 +1,6 @@
 #pragma once
 
 namespace lib4g {
-	namespace consts {
-		const char* RESET = "\033[0m";
-		const char* RED = "\033[31m";
-	}
+	const char* COLOR_RESET = "\033[0m";
+	const char* COLOR_RED = "\033[31m";
 }

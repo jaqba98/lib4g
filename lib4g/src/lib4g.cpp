@@ -1,5 +1,5 @@
 #include "lib4g.hpp"
-#include "log.hpp"
+#include "error-logger.hpp"
 
 namespace lib4g {
 	void Lib4g::run(int width, int height, const char* title) {
@@ -7,10 +7,10 @@ namespace lib4g {
 			throw "Excepted error!";
 		}
 		catch (char const* error) {
-			lib4g::log::error(error);
+			lib4g::logError(error);
 		}
 		catch (...) {
-			lib4g::log::error("Unexcepted error!");
+			lib4g::logError("Unexcepted error!");
 		}
 	}
 }
