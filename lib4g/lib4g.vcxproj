@@ -20,23 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="src\lib4g-errors.cpp" />
     <ClCompile Include="src\lib4g.cpp" />
-    <ClCompile Include="src\lib4g-core.cpp" />
-    <ClCompile Include="src\lib4g-handle-events.cpp" />
-    <ClCompile Include="src\lib4g-loop.cpp" />
-    <ClCompile Include="src\lib4g-render.cpp" />
-    <ClCompile Include="src\lib4g-window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\lib4g-colors.hpp" />
-    <ClInclude Include="src\lib4g-errors.hpp" />
+    <ClInclude Include="src\colors.hpp" />
     <ClInclude Include="src\lib4g.hpp" />
-    <ClInclude Include="src\lib4g-core.hpp" />
-    <ClInclude Include="src\lib4g-handle-events.hpp" />
-    <ClInclude Include="src\lib4g-loop.hpp" />
-    <ClInclude Include="src\lib4g-render.hpp" />
-    <ClInclude Include="src\lib4g-window.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
