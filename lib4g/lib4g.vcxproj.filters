@@ -16,41 +16,14 @@
     <Filter Include="Header Files\consts">
       <UniqueIdentifier>{3fbbb8f8-af15-4107-9a2e-4ec42ecd2704}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\core">
-      <UniqueIdentifier>{bae33b8f-a1d7-47d9-981f-8f6924ec1f31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\core">
-      <UniqueIdentifier>{042628ce-8034-4f6d-aedb-8a7da573f4cb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\logger">
-      <UniqueIdentifier>{0fc30a17-8674-423e-b2ad-bf2ccc82cb50}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\logger">
-      <UniqueIdentifier>{80caf920-fbcc-4def-98b0-0573e8e9abe6}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\lib4g.cpp">
-      <Filter>Source Files\core</Filter>
-    </ClCompile>
-    <ClCompile Include="src\error-logger.cpp">
-      <Filter>Source Files\logger</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\colors.hpp">
-      <Filter>Header Files\consts</Filter>
-    </ClInclude>
-    <ClInclude Include="src\lib4g.hpp">
-      <Filter>Header Files\core</Filter>
-    </ClInclude>
-    <ClInclude Include="src\error-logger.hpp">
-      <Filter>Header Files\logger</Filter>
-    </ClInclude>
-    <ClInclude Include="src\messages.hpp">
+    <ClInclude Include="src\console-colors.hpp">
       <Filter>Header Files\consts</Filter>
     </ClInclude>
   </ItemGroup>
