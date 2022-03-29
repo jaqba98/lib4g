@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
+    <ClCompile Include="src\error-builder.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\console-colors.hpp" />
+    <ClInclude Include="src\error-builder.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

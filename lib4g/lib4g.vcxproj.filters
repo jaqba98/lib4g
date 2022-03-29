@@ -16,15 +16,27 @@
     <Filter Include="Header Files\consts">
       <UniqueIdentifier>{3fbbb8f8-af15-4107-9a2e-4ec42ecd2704}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\builders">
+      <UniqueIdentifier>{a8c37473-4175-46d0-919a-8b88061520b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\builders">
+      <UniqueIdentifier>{c1fe7027-9e80-4f7b-967f-3d91bd2c30a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\error-builder.cpp">
+      <Filter>Source Files\builders</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\console-colors.hpp">
       <Filter>Header Files\consts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\error-builder.hpp">
+      <Filter>Header Files\builders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
