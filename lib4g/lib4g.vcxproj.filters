@@ -22,6 +22,12 @@
     <Filter Include="Source Files\builders">
       <UniqueIdentifier>{c1fe7027-9e80-4f7b-967f-3d91bd2c30a0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{54942bbf-db1b-4600-a4f3-e9178f35ccf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{ecfdd550-36ff-47ec-920d-e13b0a2f50f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -30,6 +36,9 @@
     <ClCompile Include="src\error-builder.cpp">
       <Filter>Source Files\builders</Filter>
     </ClCompile>
+    <ClCompile Include="src\lib4g.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\console-colors.hpp">
@@ -37,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="src\error-builder.hpp">
       <Filter>Header Files\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib4g.hpp">
+      <Filter>Header Files\core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
