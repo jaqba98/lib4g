@@ -34,6 +34,12 @@
     <Filter Include="Source Files\core">
       <UniqueIdentifier>{ae50d75e-1c30-4cb6-bff7-67b7bcf5d81f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\validations">
+      <UniqueIdentifier>{4f81f73c-943b-4100-b639-37be47839203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\validations">
+      <UniqueIdentifier>{8042a690-a7ef-4200-8e5c-aa7f02673836}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -48,6 +54,9 @@
     <ClCompile Include="src\core.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
+    <ClCompile Include="src\input-validation.cpp">
+      <Filter>Source Files\validations</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\console-colors.hpp">
@@ -61,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="src\core.hpp">
       <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input-validation.hpp">
+      <Filter>Header Files\validations</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

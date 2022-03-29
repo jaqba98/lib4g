@@ -22,12 +22,14 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="src\core.cpp" />
     <ClCompile Include="src\error-builder.cpp" />
+    <ClCompile Include="src\input-validation.cpp" />
     <ClCompile Include="src\lib4g.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\console-colors.hpp" />
     <ClInclude Include="src\core.hpp" />
     <ClInclude Include="src\error-builder.hpp" />
+    <ClInclude Include="src\input-validation.hpp" />
     <ClInclude Include="src\lib4g.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
