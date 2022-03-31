@@ -5,7 +5,6 @@ namespace lib4g {
 		class Window {
 		public:
 			void createWindow(int width, int height, std::string title);
-		private:
 			GLFWwindow* window;
 		};
 	}

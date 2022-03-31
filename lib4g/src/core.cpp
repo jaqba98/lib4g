@@ -14,6 +14,13 @@ namespace lib4g {
 		lib4g::builders::Window* window = new lib4g::builders::Window();
 		window->createWindow(width, height, title);
 		initOpenGL();
+		glViewport(0, 0, width, height);
+		while (!glfwWindowShouldClose(window->window)) {
+			glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+			glClear(GL_COLOR_BUFFER_BIT);
+			glfwSwapBuffers(window->window);
+			glfwPollEvents();
+		}
 		deleteCore();
 		delete inputValidation, window;
 	}
@@ -22,6 +29,7 @@ namespace lib4g {
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 #ifdef __APPLE__
 		glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
