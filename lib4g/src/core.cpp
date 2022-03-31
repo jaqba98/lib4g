@@ -1,24 +1,24 @@
-#include "glad/glad.h"
-#include "GLFW/glfw3.h"
 #include <iostream>
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include "input-validation.hpp"
-#include "window.hpp"
 #include "error-builder.hpp"
+#include "window.hpp"
 #include "core.hpp"
 
 namespace lib4g {
 	void Core::run(int width, int height, std::string title) {
 		lib4g::validations::InputValidation* inputValidation = new lib4g::validations::InputValidation();
+		lib4g::builders::Window* window = new lib4g::builders::Window();
 		inputValidation->validation(width, height, title);
 		initCore();
-		lib4g::builders::Window* window = new lib4g::builders::Window();
 		window->createWindow(width, height, title);
 		initOpenGL();
 		glViewport(0, 0, width, height);
-		while (!glfwWindowShouldClose(window->window)) {
+		while (!glfwWindowShouldClose(window->getWindow())) {
 			glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 			glClear(GL_COLOR_BUFFER_BIT);
-			glfwSwapBuffers(window->window);
+			glfwSwapBuffers(window->getWindow());
 			glfwPollEvents();
 		}
 		deleteCore();
@@ -36,13 +36,13 @@ namespace lib4g {
 #endif
 	}
 
-	void Core::deleteCore() {
-		glfwTerminate();
-	}
-
 	void Core::initOpenGL() {
 		if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
 			lib4g::builders::throwError("Failed to initalize glad");
 		}
+	}
+
+	void Core::deleteCore() {
+		glfwTerminate();
 	}
 }

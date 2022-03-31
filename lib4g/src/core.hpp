@@ -5,7 +5,7 @@ namespace lib4g {
 	public:
 		void run(int width, int height, std::string title);
 		void initCore();
-		void deleteCore();
 		void initOpenGL();
+		void deleteCore();
 	};
 }
