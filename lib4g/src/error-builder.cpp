@@ -5,7 +5,7 @@
 namespace lib4g {
 	namespace builders {
 		void throwError(std::string error) {
-			const std::string message = lib4g::colors::CONSOLE_RED + "Error: " + error + lib4g::colors::CONSOLE_RESET;
+			const std::string message = lib4g::colors::CONSOLE_RED + "Error: " + error + "!" + lib4g::colors::CONSOLE_RESET;
 			std::cout << message << std::endl;
 			exit(-1);
 		}
