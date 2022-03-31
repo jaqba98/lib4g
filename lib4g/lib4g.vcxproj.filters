@@ -77,7 +77,7 @@
     <ClInclude Include="src\input-validation.hpp">
       <Filter>Header Files\validations</Filter>
     </ClInclude>
-    <ClInclude Include="src\window.h">
+    <ClInclude Include="src\window.hpp">
       <Filter>Header Files\builders</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,7 +2,8 @@
 #include "GLFW/glfw3.h"
 #include <iostream>
 #include "input-validation.hpp"
-#include "window.h"
+#include "window.hpp"
+#include "error-builder.hpp"
 #include "core.hpp"
 
 namespace lib4g {
@@ -12,6 +13,7 @@ namespace lib4g {
 		initCore();
 		lib4g::builders::Window* window = new lib4g::builders::Window();
 		window->createWindow(width, height, title);
+		initOpenGL();
 		deleteCore();
 		delete inputValidation, window;
 	}
@@ -28,5 +30,11 @@ namespace lib4g {
 
 	void Core::deleteCore() {
 		glfwTerminate();
+	}
+
+	void Core::initOpenGL() {
+		if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+			lib4g::builders::throwError("Failed to initalize glad");
+		}
 	}
 }

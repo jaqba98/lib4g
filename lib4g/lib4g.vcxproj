@@ -32,7 +32,7 @@
     <ClInclude Include="src\error-builder.hpp" />
     <ClInclude Include="src\input-validation.hpp" />
     <ClInclude Include="src\lib4g.hpp" />
-    <ClInclude Include="src\window.h" />
+    <ClInclude Include="src\window.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

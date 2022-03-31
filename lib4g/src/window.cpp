@@ -1,7 +1,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include "error-builder.hpp"
-#include "window.h"
+#include "window.hpp"
 
 namespace lib4g {
 	namespace builders {
