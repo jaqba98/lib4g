@@ -57,6 +57,9 @@
     <ClCompile Include="src\input-validation.cpp">
       <Filter>Source Files\validations</Filter>
     </ClCompile>
+    <ClCompile Include="src\window.cpp">
+      <Filter>Source Files\builders</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\console-colors.hpp">
@@ -73,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="src\input-validation.hpp">
       <Filter>Header Files\validations</Filter>
+    </ClInclude>
+    <ClInclude Include="src\window.h">
+      <Filter>Header Files\builders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

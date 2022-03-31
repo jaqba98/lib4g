@@ -2,6 +2,7 @@
 #include "GLFW/glfw3.h"
 #include <iostream>
 #include "input-validation.hpp"
+#include "window.h"
 #include "core.hpp"
 
 namespace lib4g {
@@ -9,8 +10,10 @@ namespace lib4g {
 		lib4g::validations::InputValidation* inputValidation = new lib4g::validations::InputValidation();
 		inputValidation->validation(width, height, title);
 		initCore();
+		lib4g::builders::Window* window = new lib4g::builders::Window();
+		window->createWindow(width, height, title);
 		deleteCore();
-		delete inputValidation;
+		delete inputValidation, window;
 	}
 
 	void Core::initCore() {

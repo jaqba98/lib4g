@@ -24,6 +24,7 @@
     <ClCompile Include="src\error-builder.cpp" />
     <ClCompile Include="src\input-validation.cpp" />
     <ClCompile Include="src\lib4g.cpp" />
+    <ClCompile Include="src\window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\console-colors.hpp" />
@@ -31,6 +32,7 @@
     <ClInclude Include="src\error-builder.hpp" />
     <ClInclude Include="src\input-validation.hpp" />
     <ClInclude Include="src\lib4g.hpp" />
+    <ClInclude Include="src\window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
