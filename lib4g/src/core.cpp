@@ -8,11 +8,12 @@ namespace lib4g {
 	void Core::run(int width, int height, std::string title) {
 		lib4g::validations::InputValidation* inputValidation = new lib4g::validations::InputValidation();
 		inputValidation->validation(width, height, title);
-		init();
+		initCore();
+		deleteCore();
 		delete inputValidation;
 	}
 
-	void Core::init() {
+	void Core::initCore() {
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -20,5 +21,9 @@ namespace lib4g {
 #ifdef __APPLE__
 		glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
 #endif
+	}
+
+	void Core::deleteCore() {
+		glfwTerminate();
 	}
 }

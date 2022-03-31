@@ -11,7 +11,7 @@ namespace lib4g {
 				throw "the height width mustn't be less or equal than 0";
 			}
 			if (title.empty()) {
-				throw "the window title cannot be empty!";
+				throw "the window title cannot be empty";
 			}
 		}
 	}
