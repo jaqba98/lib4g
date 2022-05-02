@@ -1,10 +1,14 @@
 @echo off
 
 set currentPath=%cd%
+
 set demoIncludeDir=demo\libraries\include
 set demoLibDir=demo\libraries\lib
+
 set lib4gIncludeDir=lib4g\src
+:: set lib4gLibDir=lib4g\x64\Release
 set lib4gLibDir=lib4g\x64\Debug
+
 set includeFile=lib4g.hpp
 set libFile=lib4g.lib
 

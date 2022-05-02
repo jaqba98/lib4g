@@ -398,4 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 # EA
-ea/lib4g.ldb
+lib4g.ldb
