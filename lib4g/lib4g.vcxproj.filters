@@ -13,15 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\consts">
-      <UniqueIdentifier>{3fbbb8f8-af15-4107-9a2e-4ec42ecd2704}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\builders">
-      <UniqueIdentifier>{a8c37473-4175-46d0-919a-8b88061520b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\builders">
-      <UniqueIdentifier>{c1fe7027-9e80-4f7b-967f-3d91bd2c30a0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\main">
       <UniqueIdentifier>{ecfdd550-36ff-47ec-920d-e13b0a2f50f0}</UniqueIdentifier>
     </Filter>
@@ -34,11 +25,17 @@
     <Filter Include="Source Files\core">
       <UniqueIdentifier>{ae50d75e-1c30-4cb6-bff7-67b7bcf5d81f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\validations">
+    <Filter Include="Source Files\validator">
+      <UniqueIdentifier>{8042a690-a7ef-4200-8e5c-aa7f02673836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\validator">
       <UniqueIdentifier>{4f81f73c-943b-4100-b639-37be47839203}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\validations">
-      <UniqueIdentifier>{8042a690-a7ef-4200-8e5c-aa7f02673836}</UniqueIdentifier>
+    <Filter Include="Header Files\builder">
+      <UniqueIdentifier>{a8c37473-4175-46d0-919a-8b88061520b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\builder">
+      <UniqueIdentifier>{c1fe7027-9e80-4f7b-967f-3d91bd2c30a0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,7 +43,7 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="src\error-builder.cpp">
-      <Filter>Source Files\builders</Filter>
+      <Filter>Source Files\builder</Filter>
     </ClCompile>
     <ClCompile Include="src\lib4g.cpp">
       <Filter>Source Files\main</Filter>
@@ -54,19 +51,16 @@
     <ClCompile Include="src\core.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="src\input-validation.cpp">
-      <Filter>Source Files\validations</Filter>
+    <ClCompile Include="src\window-validator.cpp">
+      <Filter>Source Files\validator</Filter>
     </ClCompile>
-    <ClCompile Include="src\window.cpp">
-      <Filter>Source Files\builders</Filter>
+    <ClCompile Include="src\window-builder.cpp">
+      <Filter>Source Files\builder</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\console-colors.hpp">
-      <Filter>Header Files\consts</Filter>
-    </ClInclude>
     <ClInclude Include="src\error-builder.hpp">
-      <Filter>Header Files\builders</Filter>
+      <Filter>Header Files\builder</Filter>
     </ClInclude>
     <ClInclude Include="src\lib4g.hpp">
       <Filter>Header Files\main</Filter>
@@ -74,11 +68,11 @@
     <ClInclude Include="src\core.hpp">
       <Filter>Header Files\core</Filter>
     </ClInclude>
-    <ClInclude Include="src\input-validation.hpp">
-      <Filter>Header Files\validations</Filter>
+    <ClInclude Include="src\window-validator.hpp">
+      <Filter>Header Files\validator</Filter>
     </ClInclude>
-    <ClInclude Include="src\window.hpp">
-      <Filter>Header Files\builders</Filter>
+    <ClInclude Include="src\window-builder.hpp">
+      <Filter>Header Files\builder</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -22,17 +22,16 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="src\core.cpp" />
     <ClCompile Include="src\error-builder.cpp" />
-    <ClCompile Include="src\input-validation.cpp" />
+    <ClCompile Include="src\window-validator.cpp" />
     <ClCompile Include="src\lib4g.cpp" />
-    <ClCompile Include="src\window.cpp" />
+    <ClCompile Include="src\window-builder.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\console-colors.hpp" />
     <ClInclude Include="src\core.hpp" />
     <ClInclude Include="src\error-builder.hpp" />
-    <ClInclude Include="src\input-validation.hpp" />
+    <ClInclude Include="src\window-validator.hpp" />
     <ClInclude Include="src\lib4g.hpp" />
-    <ClInclude Include="src\window.hpp" />
+    <ClInclude Include="src\window-builder.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -88,23 +87,24 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)libraries\lib\debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\libs\include;$(IncludePath)</IncludePath>
+    <LibraryPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)\libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\libraries\lib\release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>
+    </LibraryPath>
+    <IncludePath>$(SolutionDir)\libs\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)libraries\lib\debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\libs\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\libs\lib\debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)\libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\libraries\lib\release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)\libs\lib\release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\libs\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,6 +112,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,6 +131,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,6 +150,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,6 +159,8 @@
     </Link>
     <Lib>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -163,6 +171,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -172,6 +182,8 @@
     </Link>
     <Lib>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
