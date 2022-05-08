@@ -99,11 +99,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)\libs\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\libs\lib\debug;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Kuba\Projects\lib4g\lib4g\libs\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>$(SolutionDir)\libs\lib\release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Kuba\Projects\lib4g\lib4g\libs\lib;$(LibraryPath)</LibraryPath>
     <IncludePath>$(SolutionDir)\libs\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
