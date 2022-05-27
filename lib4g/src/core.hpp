@@ -14,8 +14,6 @@ namespace lib4g {
 		private:
 			void processInput(GLFWwindow* window);
 			void render();
-			unsigned int shaderProgram;
-			unsigned int VBO, VAO;
 		};
 		void framebufferSizeCallback(GLFWwindow* window, int width, int height);
 	}
