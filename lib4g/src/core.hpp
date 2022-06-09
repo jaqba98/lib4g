@@ -13,7 +13,6 @@ namespace lib4g {
 			void run(int width, int height, std::string title);
 		private:
 			void processInput(GLFWwindow* window);
-			void render();
 		};
 		void framebufferSizeCallback(GLFWwindow* window, int width, int height);
 	}
